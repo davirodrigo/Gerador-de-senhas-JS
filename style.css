@@ -1,0 +1,97 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin:0 auto;
+    padding:0;
+    width: 100%;
+}
+body{
+    background-color: #18181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex-direction: column;
+}
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+.container-input{
+    max-width: 480px;
+    margin-top: 14px;
+}
+.container-input span {
+    color:#fff;
+    font-size:22px;
+}
+.slider{
+    width:100%;
+    appearance:none;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    height: 18px;
+    outline:red;
+}
+.button{
+    background:#3EB72B; 
+    height:40px;
+    border:0;
+    border-radius:4px;
+    cursor:pointer;
+    margin-top: 40px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-pw-show{
+    max-width: 480px;
+    margin-top: 14px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+
+}
+.password-title{
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+    margin-top:24px;
+    margin-bottom:8px;
+}
+.password{
+    height: 60px;
+    background-color:rgba(0,0,0, .5);
+    border-radius: 4px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:#fff;
+    border: 1px solid #313131;
+    transition: transform .80s;
+}
+.password:hover{
+    transform: scale(1.05);
+}
+.copy-pw{
+    color:#fff;
+    position:relative;
+    top:20px;
+    padding: 4px 8px;
+    text-align: center;
+    background-color: rgb(15,15,15);
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    transition: transform 2.5s;
+}
+.container-pw-show:hover .copy-pw{
+    visibility: visible;
+    transform: scale(1.15);
+}
+.container-pw-hide{
+    display: none;
+}
+.caractere{
+    margin-left:7px;
+}
